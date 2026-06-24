@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Waman Agba</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">WA</span>
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-greeting">Bonjour, je suis</p>
+      <h1 class="hero-name">Waman Agba</h1>
+      <h2 class="hero-title">
+        <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-desc">
+        Développeur passionné par la création d'expériences web modernes, performantes et accessibles.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn-outline">Me contacter</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-card-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="code-filename">portfolio.js</span>
+        </div>
+        <pre class="code-body"><span class="kw">const</span> <span class="var">dev</span> = {
+  <span class="key">nom</span>: <span class="str">"Waman Agba"</span>,
+  <span class="key">passion</span>: <span class="str">"Web &amp; Code"</span>,
+  <span class="key">stack</span>: [
+    <span class="str">"HTML"</span>, <span class="str">"CSS"</span>,
+    <span class="str">"JavaScript"</span>,
+    <span class="str">"React"</span>, <span class="str">"Node.js"</span>
+  ],
+  <span class="key">disponible</span>: <span class="bool">true</span>
+};</pre>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">À propos</h2>
+      <div class="about-grid">
+        <div class="about-avatar">
+          <div class="avatar-ring">
+            <div class="avatar-initials">WA</div>
+          </div>
+          <div class="about-badges">
+            <span class="badge">🚀 Disponible</span>
+            <span class="badge">📍 Afrique</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>
+            Je suis un développeur web avec une vraie passion pour le code propre, les interfaces soignées et les solutions qui font une différence. J'aime relever des défis techniques tout en gardant l'expérience utilisateur au centre de chaque décision.
+          </p>
+          <p>
+            Curieux et autodidacte, je me forme en continu sur les nouvelles technologies pour rester à la pointe. Que ce soit un site vitrine, une application web complexe ou une API robuste, je m'investis à 100% dans chaque projet.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Projets réalisés</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Années d'expérience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Satisfaction client</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <h2 class="section-title">Compétences</h2>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Frontend</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">HTML / CSS</span>
+                <span class="skill-pct">95%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">React</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Backend</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Node.js</span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Python</span>
+                <span class="skill-pct">65%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">SQL / NoSQL</span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Outils</h3>
+          <div class="skill-tags">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Linux</span>
+            <span class="tag">REST API</span>
+            <span class="tag">Tailwind CSS</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projets</h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-img project-img-1">
+            <span class="project-icon">🛒</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="ptag">React</span>
+              <span class="ptag">Node.js</span>
+              <span class="ptag">MongoDB</span>
+            </div>
+            <h3 class="project-title">E-Commerce App</h3>
+            <p class="project-desc">Application de commerce en ligne complète avec panier, paiement et gestion des commandes en temps réel.</p>
+            <div class="project-links">
+              <a href="#" class="plink">Demo →</a>
+              <a href="#" class="plink plink-ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img project-img-2">
+            <span class="project-icon">📊</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="ptag">JavaScript</span>
+              <span class="ptag">Chart.js</span>
+              <span class="ptag">API REST</span>
+            </div>
+            <h3 class="project-title">Dashboard Analytics</h3>
+            <p class="project-desc">Tableau de bord interactif avec visualisations de données en temps réel et exports CSV/PDF.</p>
+            <div class="project-links">
+              <a href="#" class="plink">Demo →</a>
+              <a href="#" class="plink plink-ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img project-img-3">
+            <span class="project-icon">💬</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="ptag">React</span>
+              <span class="ptag">Socket.io</span>
+              <span class="ptag">Express</span>
+            </div>
+            <h3 class="project-title">Chat en temps réel</h3>
+            <p class="project-desc">Application de messagerie instantanée avec salles privées, notifications et historique des messages.</p>
+            <div class="project-links">
+              <a href="#" class="plink">Demo →</a>
+              <a href="#" class="plink plink-ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img project-img-4">
+            <span class="project-icon">🌍</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="ptag">HTML</span>
+              <span class="ptag">CSS</span>
+              <span class="ptag">JavaScript</span>
+            </div>
+            <h3 class="project-title">Site Vitrine</h3>
+            <p class="project-desc">Site web responsive pour une PME locale avec SEO optimisé et formulaire de contact intégré.</p>
+            <div class="project-links">
+              <a href="#" class="plink">Demo →</a>
+              <a href="#" class="plink plink-ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">Vous avez un projet en tête ? N'hésitez pas à me contacter, je réponds sous 24h.</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <span class="contact-icon">📧</span>
+              <a href="mailto:yacoubu02@gmail.com">yacoubu02@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">💼</span>
+              <a href="https://github.com/wamanagba" target="_blank">github.com/wamanagba</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <span>Afrique de l'Ouest</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Nom</label>
+            <input type="text" id="name" placeholder="Votre nom" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="votre@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Parlez-moi de votre projet..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Envoyer le message</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Fait avec ❤️ par <strong>Waman Agba</strong> · 2026</p>
+      <p class="footer-sub">HTML · CSS · JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

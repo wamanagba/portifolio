@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio — Waman Agba</title>
+  <title>Yacouba Ouedraogo — AI & Climate Data Scientist</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- Nav -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <span class="nav-logo">WA</span>
+      <span class="nav-logo">YO</span>
       <ul class="nav-links">
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#skills">Compétences</a></li>
-        <li><a href="#projects">Projets</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <button class="nav-toggle" id="navToggle" aria-label="Menu">
@@ -28,18 +30,23 @@
 
   <!-- Hero -->
   <section class="hero" id="home">
+    <div class="hero-bg-map"></div>
     <div class="hero-content">
-      <p class="hero-greeting">Bonjour, je suis</p>
-      <h1 class="hero-name">Waman Agba</h1>
+      <div class="hero-badges-top">
+        <span class="hero-badge">🌍 Sahel Region</span>
+        <span class="hero-badge">🏆 Alumni Excellence Award – AIMS 2025</span>
+      </div>
+      <p class="hero-greeting">Hello, I am</p>
+      <h1 class="hero-name">Yacouba Ouedraogo</h1>
       <h2 class="hero-title">
         <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
       </h2>
       <p class="hero-desc">
-        Développeur passionné par la création d'expériences web modernes, performantes et accessibles.
+        Climate Data Scientist with <strong>6 years of experience</strong> designing and deploying machine learning solutions for climate and environmental data systems in Africa. Working at the intersection of AI, geospatial data, and humanitarian action.
       </p>
       <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
-        <a href="#contact" class="btn btn-outline">Me contacter</a>
+        <a href="#experience" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
       </div>
     </div>
     <div class="hero-visual">
@@ -48,18 +55,20 @@
           <span class="dot red"></span>
           <span class="dot yellow"></span>
           <span class="dot green"></span>
-          <span class="code-filename">portfolio.js</span>
+          <span class="code-filename">profile.py</span>
         </div>
-        <pre class="code-body"><span class="kw">const</span> <span class="var">dev</span> = {
-  <span class="key">nom</span>: <span class="str">"Waman Agba"</span>,
-  <span class="key">passion</span>: <span class="str">"Web &amp; Code"</span>,
-  <span class="key">stack</span>: [
-    <span class="str">"HTML"</span>, <span class="str">"CSS"</span>,
-    <span class="str">"JavaScript"</span>,
-    <span class="str">"React"</span>, <span class="str">"Node.js"</span>
+        <pre class="code-body"><span class="kw">scientist</span> = {
+  <span class="key">"name"</span>: <span class="str">"Yacouba Ouedraogo"</span>,
+  <span class="key">"role"</span>: <span class="str">"AI & Climate Data Scientist"</span>,
+  <span class="key">"focus"</span>: <span class="str">"ML for Climate Systems"</span>,
+  <span class="key">"impact"</span>: [
+    <span class="str">"WFP"</span>, <span class="str">"UNHCR"</span>,
+    <span class="str">"World Bank"</span>, <span class="str">"NASA"</span>,
+    <span class="str">"Red Cross"</span>
   ],
-  <span class="key">disponible</span>: <span class="bool">true</span>
-};</pre>
+  <span class="key">"region"</span>: <span class="str">"Africa & Sahel"</span>,
+  <span class="key">"open_to_work"</span>: <span class="bool">True</span>
+}</pre>
       </div>
     </div>
     <div class="scroll-indicator">
@@ -70,39 +79,248 @@
   <!-- About -->
   <section class="section" id="about">
     <div class="container">
-      <h2 class="section-title">À propos</h2>
+      <h2 class="section-title">About Me</h2>
       <div class="about-grid">
         <div class="about-avatar">
           <div class="avatar-ring">
-            <div class="avatar-initials">WA</div>
+            <div class="avatar-initials">YO</div>
           </div>
           <div class="about-badges">
-            <span class="badge">🚀 Disponible</span>
-            <span class="badge">📍 Afrique</span>
+            <span class="badge">🇧🇫 Burkina Faso</span>
+            <span class="badge">📍 Senegal</span>
+            <span class="badge">🌐 French · English</span>
+          </div>
+          <div class="partner-logos">
+            <span class="partner">WFP</span>
+            <span class="partner">UNHCR</span>
+            <span class="partner">NASA</span>
+            <span class="partner">World Bank</span>
           </div>
         </div>
         <div class="about-text">
           <p>
-            Je suis un développeur web avec une vraie passion pour le code propre, les interfaces soignées et les solutions qui font une différence. J'aime relever des défis techniques tout en gardant l'expérience utilisateur au centre de chaque décision.
+            I am an <strong>AI & Climate Data Scientist</strong> specialized in AI-enabled data ingestion, quality control, gap-filling, and climate analytics using large-scale geospatial and time-series datasets — including CHIRPS, ERA5, Copernicus, and ACLED.
           </p>
           <p>
-            Curieux et autodidacte, je me forme en continu sur les nouvelles technologies pour rester à la pointe. Que ce soit un site vitrine, une application web complexe ou une API robuste, je m'investis à 100% dans chaque projet.
+            My work spans the full pipeline: from raw satellite and sensor data to operational early-warning systems used by humanitarian organizations across 8 Sahelian countries. I have built reproducible ML pipelines, integrated models into platforms like CRAFT, and trained teams on open-source practices.
+          </p>
+          <p>
+            I am passionate about using data science as a tool for anticipatory action — turning complex climate signals into decisions that save lives.
           </p>
           <div class="about-stats">
             <div class="stat">
-              <span class="stat-number">10+</span>
-              <span class="stat-label">Projets réalisés</span>
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Years Experience</span>
             </div>
             <div class="stat">
-              <span class="stat-number">3+</span>
-              <span class="stat-label">Années d'expérience</span>
+              <span class="stat-number">8</span>
+              <span class="stat-label">Sahel Countries</span>
             </div>
             <div class="stat">
-              <span class="stat-number">100%</span>
-              <span class="stat-label">Satisfaction client</span>
+              <span class="stat-number">32</span>
+              <span class="stat-label">High-Risk Districts Covered</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">90%</span>
+              <span class="stat-label">Runtime Reduction</span>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Achievements -->
+  <section class="section section-dark" id="achievements">
+    <div class="container">
+      <h2 class="section-title">Key Achievements</h2>
+      <div class="achievements-grid">
+
+        <div class="achievement-card">
+          <div class="ach-icon">⚡</div>
+          <h3>CRAFT Automation — 100%</h3>
+          <p>Fully automated climate data ingestion into CRAFT, enabling scheduled and reproducible end-to-end runs across Sahel countries.</p>
+        </div>
+
+        <div class="achievement-card">
+          <div class="ach-icon">🚀</div>
+          <h3>&gt;90% Runtime Reduction</h3>
+          <p>Replaced ArcGIS geoprocessing with open-source R/Python pipelines (terra, sf, raster), cutting compute time by over 90%.</p>
+        </div>
+
+        <div class="achievement-card">
+          <div class="ach-icon">🔓</div>
+          <h3>Open-Sourced CRAFT</h3>
+          <p>Removed proprietary dependencies and delivered a portable, reproducible open-source stack with lower total cost of ownership.</p>
+        </div>
+
+        <div class="achievement-card">
+          <div class="ach-icon">🌦️</div>
+          <h3>Multi-Source Pipelines</h3>
+          <p>Engineered R/Python workflows integrating 30+ years of CHIRPS and ERA5 climate data, ACLED conflict data, and Cadre Harmonisé food security indicators.</p>
+        </div>
+
+        <div class="achievement-card">
+          <div class="ach-icon">🗺️</div>
+          <h3>Composite Indices & Mapping</h3>
+          <p>Built PCA-based conflict–climate indices and 20×20 km risk grids; produced vulnerability maps used by WFP, UNHCR, and CIAT.</p>
+        </div>
+
+        <div class="achievement-card">
+          <div class="ach-icon">🌾</div>
+          <h3>Crop Yield Prediction (ML)</h3>
+          <p>Built and validated ML models (Random Forest, GAM) using climate and EO features to forecast district-level crop yields in West Africa.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="section-title">Professional Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Risk Data Specialist (Consultant)</h3>
+                <span class="tl-org">World Bank</span>
+              </div>
+              <span class="tl-date">2025 – Present</span>
+            </div>
+            <ul class="tl-list">
+              <li>Supported climate and conflict risk analytics for decision support and early warning.</li>
+              <li>Conducted data readiness assessments and ensured compliance with data governance and privacy standards.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Research Associate — GIS & Climate Data Science</h3>
+                <span class="tl-org">Alliance Bioversity & CIAT — Senegal</span>
+              </div>
+              <span class="tl-date">Feb 2024 – Present</span>
+            </div>
+            <ul class="tl-list">
+              <li>Designed geospatial early-warning product combining climate anomalies and conflict intensity, enabling WFP to trigger anticipatory actions in <strong>32 high-risk districts across 8 Sahelian countries</strong>.</li>
+              <li>Technical focal point for UNHCR: coordinated climate–conflict analytics for displacement risk using a 20×20 km gridded methodology (SPEI-3).</li>
+              <li>Applied Random Forest, Gradient Boosting, GAMs, cPCA, K-means on satellite and field data using reproducible Python pipelines.</li>
+              <li>Conducted localized climate-risk assessments for the Climate Security Observatory.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Visiting Researcher</h3>
+                <span class="tl-org">NASA — USA</span>
+              </div>
+              <span class="tl-date">Jan 2024</span>
+            </div>
+            <ul class="tl-list">
+              <li>Prototyped near-real-time workflows generating dynamic crop production forecasts using Earth observation data streams.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Research Fellow — Spatial Analyst</h3>
+                <span class="tl-org">University of Florida — Gainesville, USA</span>
+              </div>
+              <span class="tl-date">Oct 2022 – Feb 2024</span>
+            </div>
+            <ul class="tl-list">
+              <li>Automated ingestion, harmonization, and QA of gridded climate datasets (NASA POWER, Copernicus, CHIRPS) into CRAFT, reducing manual processing time by <strong>~80%</strong>.</li>
+              <li>Built and validated DSSAT-based crop production hindcasts at district level for key crops in Ghana.</li>
+              <li>Developed modular workflows integrating EO-based crop masks into CRAFT for finer spatial analyses across West Africa.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Consultant — Data Quality & Methodology</h3>
+                <span class="tl-org">IDEMS International</span>
+              </div>
+              <span class="tl-date">Jan – Apr 2023</span>
+            </div>
+            <ul class="tl-list">
+              <li>Built automated QA/QC pipelines for ODK/Kobo data (range checks, skip logic, GPS validation, deduplication).</li>
+              <li>Developed R-based mapping and batch-export pipelines for decision-ready outputs.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">GIS Data Scientist (Intern)</h3>
+                <span class="tl-org">ACMAD — Niger</span>
+              </div>
+              <span class="tl-date">Apr – Sep 2022</span>
+            </div>
+            <ul class="tl-list">
+              <li>Automated agro-climatic bulletins (onset, drought, dry spells) for the African region.</li>
+              <li>Delivered climate–health early-warning analytics (malaria, meningitis) using rainfall, temperature, and epidemiological indicators.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Junior Researcher — FBF & Disaster Resilience</h3>
+                <span class="tl-org">Red Cross Red Crescent Climate Centre — Senegal</span>
+              </div>
+              <span class="tl-date">Oct 2021 – May 2022</span>
+            </div>
+            <ul class="tl-list">
+              <li>Developed AI-based crop yield prediction models using climate variables for anticipatory action.</li>
+              <li>Produced flood risk maps for UNICEF's humanitarian response in Kaduna State, Nigeria.</li>
+              <li>Evaluated forecast skill (GloFAS/ECMWF, CHIRPS/ERA5) to inform FbF activation thresholds.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Biostatistician — Health Data Analyst</h3>
+                <span class="tl-org">INSTech — Burkina Faso</span>
+              </div>
+              <span class="tl-date">Jan 2019 – Oct 2020</span>
+            </div>
+            <ul class="tl-list">
+              <li>Analyzed clinical data on malaria treatment effectiveness for public health decision-making.</li>
+              <li>Led data quality assurance and survey data analysis, improving research reliability.</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -110,74 +328,68 @@
   <!-- Skills -->
   <section class="section section-dark" id="skills">
     <div class="container">
-      <h2 class="section-title">Compétences</h2>
+      <h2 class="section-title">Skills & Tools</h2>
       <div class="skills-grid">
 
         <div class="skill-category">
-          <h3 class="skill-cat-title">Frontend</h3>
+          <h3 class="skill-cat-title">AI & Machine Learning</h3>
           <div class="skill-list">
             <div class="skill-item">
-              <div class="skill-info">
-                <span class="skill-name">HTML / CSS</span>
-                <span class="skill-pct">95%</span>
-              </div>
+              <div class="skill-info"><span class="skill-name">Python / R</span><span class="skill-pct">95%</span></div>
               <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
             </div>
             <div class="skill-item">
-              <div class="skill-info">
-                <span class="skill-name">JavaScript</span>
-                <span class="skill-pct">85%</span>
-              </div>
+              <div class="skill-info"><span class="skill-name">Random Forest / GAM / PCA</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Anomaly Detection / Gap-filling</span><span class="skill-pct">88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Time-series Analysis</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Geospatial & Climate Data</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">CHIRPS / ERA5 / Copernicus</span><span class="skill-pct">95%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Google Earth Engine</span><span class="skill-pct">85%</span></div>
               <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
             </div>
             <div class="skill-item">
-              <div class="skill-info">
-                <span class="skill-name">React</span>
-                <span class="skill-pct">75%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+              <div class="skill-info"><span class="skill-name">QGIS / ArcMap</span><span class="skill-pct">88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">NDVI / EVI / SPEI-3</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
             </div>
           </div>
         </div>
 
         <div class="skill-category">
-          <h3 class="skill-cat-title">Backend</h3>
-          <div class="skill-list">
-            <div class="skill-item">
-              <div class="skill-info">
-                <span class="skill-name">Node.js</span>
-                <span class="skill-pct">70%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info">
-                <span class="skill-name">Python</span>
-                <span class="skill-pct">65%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info">
-                <span class="skill-name">SQL / NoSQL</span>
-                <span class="skill-pct">70%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3 class="skill-cat-title">Outils</h3>
+          <h3 class="skill-cat-title">Tools & Platforms</h3>
           <div class="skill-tags">
-            <span class="tag">Git</span>
-            <span class="tag">GitHub</span>
-            <span class="tag">VS Code</span>
-            <span class="tag">Figma</span>
-            <span class="tag">Docker</span>
-            <span class="tag">Linux</span>
-            <span class="tag">REST API</span>
-            <span class="tag">Tailwind CSS</span>
+            <span class="tag">SQL</span>
+            <span class="tag">C#</span>
+            <span class="tag">Tableau</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">LaTeX</span>
+            <span class="tag">CDO</span>
+            <span class="tag">ODK / Kobo</span>
+            <span class="tag">NASA POWER</span>
+            <span class="tag">ACLED</span>
+            <span class="tag">IPC / Cadre Harmonisé</span>
+            <span class="tag">DSSAT</span>
+            <span class="tag">GloFAS / ECMWF</span>
           </div>
         </div>
 
@@ -185,87 +397,87 @@
     </div>
   </section>
 
-  <!-- Projects -->
-  <section class="section" id="projects">
+  <!-- Education & Awards -->
+  <section class="section" id="education">
     <div class="container">
-      <h2 class="section-title">Projets</h2>
-      <div class="projects-grid">
+      <h2 class="section-title">Education & Awards</h2>
+      <div class="edu-awards-grid">
 
-        <article class="project-card">
-          <div class="project-img project-img-1">
-            <span class="project-icon">🛒</span>
-          </div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="ptag">React</span>
-              <span class="ptag">Node.js</span>
-              <span class="ptag">MongoDB</span>
+        <div class="edu-block">
+          <h3 class="block-title">Education</h3>
+          <div class="edu-list">
+            <div class="edu-item">
+              <div class="edu-period">2024 – 2026</div>
+              <div class="edu-body">
+                <strong>Master's in International Cooperation and Humanitarian Aid</strong>
+                <span>Kalu Institute</span>
+              </div>
             </div>
-            <h3 class="project-title">E-Commerce App</h3>
-            <p class="project-desc">Application de commerce en ligne complète avec panier, paiement et gestion des commandes en temps réel.</p>
-            <div class="project-links">
-              <a href="#" class="plink">Demo →</a>
-              <a href="#" class="plink plink-ghost">GitHub</a>
+            <div class="edu-item">
+              <div class="edu-period">2020 – 2022</div>
+              <div class="edu-body">
+                <strong>Master's in Mathematical Sciences — Big Data / Machine Learning</strong>
+                <span>AIMS Senegal <em>(African Institute of Mathematical Sciences)</em></span>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-period">2016 – 2019</div>
+              <div class="edu-body">
+                <strong>Master of Applied Mathematics — Modelling & Scientific Computing</strong>
+                <span>Université Nazi Boni — Burkina Faso</span>
+              </div>
             </div>
           </div>
-        </article>
 
-        <article class="project-card">
-          <div class="project-img project-img-2">
-            <span class="project-icon">📊</span>
+          <h3 class="block-title mt">Certifications</h3>
+          <div class="cert-list">
+            <div class="cert-item">🛰️ NASA ARSET — Fundamentals of Machine Learning for Earth Science</div>
+            <div class="cert-item">📊 YONSEI University — Spatial Data Science and Applications</div>
+            <div class="cert-item">📋 MEAL DPro — Monitoring, Evaluation, Accountability & Learning (CRS / Humentum)</div>
+            <div class="cert-item">📁 Project Management — Kalu Institute</div>
           </div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="ptag">JavaScript</span>
-              <span class="ptag">Chart.js</span>
-              <span class="ptag">API REST</span>
-            </div>
-            <h3 class="project-title">Dashboard Analytics</h3>
-            <p class="project-desc">Tableau de bord interactif avec visualisations de données en temps réel et exports CSV/PDF.</p>
-            <div class="project-links">
-              <a href="#" class="plink">Demo →</a>
-              <a href="#" class="plink plink-ghost">GitHub</a>
-            </div>
-          </div>
-        </article>
+        </div>
 
-        <article class="project-card">
-          <div class="project-img project-img-3">
-            <span class="project-icon">💬</span>
-          </div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="ptag">React</span>
-              <span class="ptag">Socket.io</span>
-              <span class="ptag">Express</span>
+        <div class="awards-block">
+          <h3 class="block-title">Awards & Grants</h3>
+          <div class="award-list">
+            <div class="award-item">
+              <span class="award-icon">🏆</span>
+              <div>
+                <strong>Alumni Excellence Award</strong>
+                <span>AIMS Senegal — 2025</span>
+              </div>
             </div>
-            <h3 class="project-title">Chat en temps réel</h3>
-            <p class="project-desc">Application de messagerie instantanée avec salles privées, notifications et historique des messages.</p>
-            <div class="project-links">
-              <a href="#" class="plink">Demo →</a>
-              <a href="#" class="plink plink-ghost">GitHub</a>
+            <div class="award-item">
+              <span class="award-icon">🚀</span>
+              <div>
+                <strong>Small Innovation Grants Program</strong>
+                <span>USAID / NASA</span>
+              </div>
+            </div>
+            <div class="award-item">
+              <span class="award-icon">🎓</span>
+              <div>
+                <strong>MS4CR Scholarship</strong>
+                <span>Machine Learning for Climate Research</span>
+              </div>
+            </div>
+            <div class="award-item">
+              <span class="award-icon">🎓</span>
+              <div>
+                <strong>Master Scholarship of AIMS</strong>
+                <span>African Institute of Mathematical Sciences</span>
+              </div>
+            </div>
+            <div class="award-item">
+              <span class="award-icon">🎓</span>
+              <div>
+                <strong>WANECAM Scholarship</strong>
+                <span>West African Network for Clinical Trials</span>
+              </div>
             </div>
           </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-img project-img-4">
-            <span class="project-icon">🌍</span>
-          </div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="ptag">HTML</span>
-              <span class="ptag">CSS</span>
-              <span class="ptag">JavaScript</span>
-            </div>
-            <h3 class="project-title">Site Vitrine</h3>
-            <p class="project-desc">Site web responsive pour une PME locale avec SEO optimisé et formulaire de contact intégré.</p>
-            <div class="project-links">
-              <a href="#" class="plink">Demo →</a>
-              <a href="#" class="plink plink-ghost">GitHub</a>
-            </div>
-          </div>
-        </article>
+        </div>
 
       </div>
     </div>
@@ -274,14 +486,18 @@
   <!-- Contact -->
   <section class="section section-dark" id="contact">
     <div class="container">
-      <h2 class="section-title">Contact</h2>
+      <h2 class="section-title">Get in Touch</h2>
       <div class="contact-grid">
         <div class="contact-info">
-          <p class="contact-intro">Vous avez un projet en tête ? N'hésitez pas à me contacter, je réponds sous 24h.</p>
+          <p class="contact-intro">Open to collaborations on climate data science, early-warning systems, ML for humanitarian applications, or research partnerships.</p>
           <div class="contact-items">
             <div class="contact-item">
               <span class="contact-icon">📧</span>
               <a href="mailto:yacoubu02@gmail.com">yacoubu02@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <a href="tel:+221788776135">+221 788 776 135</a>
             </div>
             <div class="contact-item">
               <span class="contact-icon">💼</span>
@@ -289,24 +505,24 @@
             </div>
             <div class="contact-item">
               <span class="contact-icon">📍</span>
-              <span>Afrique de l'Ouest</span>
+              <span>Senegal / West Africa</span>
             </div>
           </div>
         </div>
         <form class="contact-form" id="contactForm">
           <div class="form-group">
-            <label for="name">Nom</label>
-            <input type="text" id="name" placeholder="Votre nom" required />
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" required />
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="votre@email.com" required />
+            <input type="email" id="email" placeholder="your@email.com" required />
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" rows="5" placeholder="Parlez-moi de votre projet..." required></textarea>
+            <textarea id="message" rows="5" placeholder="Your project, collaboration idea, or question..." required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary btn-full">Envoyer le message</button>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
           <p class="form-note" id="formNote"></p>
         </form>
       </div>
@@ -316,8 +532,8 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>Fait avec ❤️ par <strong>Waman Agba</strong> · 2026</p>
-      <p class="footer-sub">HTML · CSS · JavaScript</p>
+      <p><strong>Yacouba Ouedraogo</strong> · AI & Climate Data Scientist · 2026</p>
+      <p class="footer-sub">Python · R · Machine Learning · Geospatial · Early Warning</p>
     </div>
   </footer>
 

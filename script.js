@@ -18,11 +18,12 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 
 // Typed text effect
 const phrases = [
-  'Développeur Web',
-  'Frontend Developer',
-  'Backend Developer',
-  'UI / UX Enthusiast',
-  'Créateur de solutions',
+  'AI & Climate Data Scientist',
+  'ML for Climate Systems',
+  'Geospatial Data Engineer',
+  'Early Warning Specialist',
+  'Research Fellow — NASA & UF',
+  'Sahel Food Security Analyst',
 ];
 let phraseIndex = 0, charIndex = 0, deleting = false;
 const typedEl = document.getElementById('typedText');
@@ -33,7 +34,7 @@ function type() {
     typedEl.textContent = current.slice(0, ++charIndex);
     if (charIndex === current.length) {
       deleting = true;
-      setTimeout(type, 1800);
+      setTimeout(type, 2000);
       return;
     }
   } else {
@@ -43,7 +44,7 @@ function type() {
       phraseIndex = (phraseIndex + 1) % phrases.length;
     }
   }
-  setTimeout(type, deleting ? 60 : 90);
+  setTimeout(type, deleting ? 55 : 85);
 }
 type();
 
@@ -53,17 +54,15 @@ const observer = new IntersectionObserver((entries) => {
     if (!entry.isIntersecting) return;
     entry.target.classList.add('visible');
 
-    // Animate skill bars when in view
     entry.target.querySelectorAll('.skill-fill').forEach(bar => {
       bar.style.width = bar.dataset.width + '%';
     });
 
     observer.unobserve(entry.target);
   });
-}, { threshold: 0.15 });
+}, { threshold: 0.12 });
 
-// Add fade-in to all sections and cards
-document.querySelectorAll('.section, .project-card, .skill-category, .about-grid').forEach(el => {
+document.querySelectorAll('.section, .project-card, .skill-category, .about-grid, .achievement-card, .timeline-item, .edu-item').forEach(el => {
   el.classList.add('fade-in');
   observer.observe(el);
 });
@@ -74,20 +73,20 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
   const note = document.getElementById('formNote');
   const btn = this.querySelector('button[type="submit"]');
 
-  btn.textContent = 'Envoi en cours...';
+  btn.textContent = 'Sending...';
   btn.disabled = true;
 
   setTimeout(() => {
-    note.textContent = '✓ Message envoyé ! Je vous réponds sous 24h.';
+    note.textContent = '✓ Message sent! I will reply within 24h.';
     note.style.color = 'var(--green)';
     this.reset();
-    btn.textContent = 'Envoyer le message';
+    btn.textContent = 'Send Message';
     btn.disabled = false;
     setTimeout(() => { note.textContent = ''; }, 5000);
   }, 1200);
 });
 
-// Smooth active nav link highlight
+// Active nav link highlight on scroll
 const sections = document.querySelectorAll('section[id]');
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY + 80;

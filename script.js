@@ -186,6 +186,44 @@ const achData = [
         <span class="ach-tag">EVI</span><span class="ach-tag">Python</span><span class="ach-tag">R</span><span class="ach-tag">NASA</span>
       </div>`
   }
+  ,
+  {
+    icon: '🏙️',
+    title: 'Decision-Ready Spatial Analytics for FCV-Sensitive Urban Investment',
+    body: `
+      <p><strong>Project Overview</strong></p>
+      <p>This project supported the World Bank's analytical work on secondary cities in Burkina Faso, examining how urban growth, infrastructure access, economic potential, conflict dynamics, displacement, and investment locations interact in fragile and conflict-affected settings. The objective was to produce decision-ready spatial evidence to support territorial planning, urban diagnostics, and resilient investment prioritization.</p>
+
+      <p><strong>My Role</strong></p>
+      <p>I led the geospatial and analytical workstream — developing reproducible spatial workflows, harmonizing multi-source datasets, preparing city-level diagnostic workbooks, and producing maps and analytical visuals for technical and policy discussions. The analysis covered six cities: <em>Kaya, Ouagadougou, Bobo-Dioulasso, Fada N'Gourma, Ouahigouya, and Koudougou</em>.</p>
+
+      <p><strong>Key Contributions</strong></p>
+      <ul>
+        <li>Developed reproducible geospatial workflows to generate comparable urban diagnostics across six cities.</li>
+        <li>Integrated WSF built-up data, GEMS investment locations, ACLED conflict events, CONASUR displacement data, Africapolis, OSM road networks, VIIRS night-time lights, RGE 2024 economic units, and market access indicators.</li>
+        <li>Produced city-level diagnostic workbooks combining indicators on urban growth, economic activity, infrastructure access, and FCV dynamics.</li>
+        <li>Contributed to Economic Potential Index mapping at commune level (economic activity, transport connectivity, market access, urban hierarchy).</li>
+        <li>Developed a conflict-sensitive urban profile for Kaya, linking built-up expansion, conflict dynamics, and displacement trends.</li>
+        <li>Produced decision-ready maps and figures for technical workshops and strategic policy dialogue.</li>
+      </ul>
+
+      <p><strong>Outputs</strong></p>
+      <ul>
+        <li>Six city-level diagnostic workbooks</li>
+        <li>Economic Potential Index map layers</li>
+        <li>Secondary-city geospatial maps</li>
+        <li>Kaya conflict-sensitive urban profile</li>
+        <li>Built-up expansion analysis (WSF data)</li>
+        <li>Investment mapping (GEMS project locations)</li>
+        <li>Presentation-ready figures for policy discussions</li>
+      </ul>
+
+      <div class="ach-tags">
+        <span class="ach-tag">R</span><span class="ach-tag">Python</span><span class="ach-tag">QGIS</span>
+        <span class="ach-tag">ACLED</span><span class="ach-tag">WSF</span><span class="ach-tag">VIIRS</span>
+        <span class="ach-tag">OSM</span><span class="ach-tag">GEMS</span><span class="ach-tag">World Bank</span>
+      </div>`
+  }
 ];
 
 const overlay = document.getElementById('achOverlay');

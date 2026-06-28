@@ -89,51 +89,42 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 // Achievement modal
 const achData = [
   {
-    icon: '⚡',
-    title: 'CRAFT Automation — 100%',
+    icon: '⚙️',
+    title: 'Open-Source Automation of CRAFT Forecasting Workflows',
     body: `
-      <p>The Climate Risk and Food security Tool (CRAFT) previously relied on manual data downloads and processing steps that were error-prone and time-consuming. I redesigned the entire ingestion layer to run automatically.</p>
+      <p><strong>Project Overview</strong></p>
+      <p>This project focused on improving and automating key workflows within the CCAFS Regional Agricultural Forecasting Toolbox (CRAFT). CRAFT is a decision-support system used for in-season crop yield forecasting, agricultural risk analysis, climate change impact studies, and spatial aggregation of crop simulation results into thematic maps.</p>
+      <p>The main objective was to reduce CRAFT's dependence on proprietary ArcGIS workflows by developing open-source R and Python scripts for geospatial preprocessing, schema generation, weather-data ingestion, crop-mask integration, and database automation.</p>
+
+      <p><strong>My Role</strong></p>
+      <p>As a Spatial Analyst and SIGP Fellow at the University of Florida, I contributed to the automation of CRAFT's geospatial and climate-data workflows. My work involved developing R and Python scripts, processing shapefiles and gridded data, integrating open climate data sources, preparing crop and soil masks, and improving the efficiency of CRAFT database workflows.</p>
+
+      <p><strong>Key Contributions</strong></p>
       <ul>
-        <li>Built scheduled pipelines that pull CHIRPS, ERA5, and NASA POWER data without human intervention.</li>
-        <li>Implemented end-to-end reproducibility: from raw API calls to processed indicators ready for analysis.</li>
-        <li>Deployed across <strong>8 Sahelian countries</strong>, enabling WFP and partner teams to run consistent weekly updates.</li>
-        <li>Reduced risk of human error in data handling by replacing manual steps with validated, version-controlled code.</li>
+        <li>Developed open-source R scripts to generate CRAFT schemas and matching world-grid components directly from country shapefiles.</li>
+        <li>Replaced ArcGIS-dependent preprocessing steps with reproducible R-based spatial workflows, reducing reliance on proprietary software.</li>
+        <li>Reduced schema generation time from more than 12 hours to approximately 2 minutes for Mali, achieving over 90% runtime reduction.</li>
+        <li>Built Python workflows to automatically download and process NASA POWER and CHIRPS weather data for CRAFT integration.</li>
+        <li>Automated the merging of NASA POWER and CHIRPS data into CRAFT-compatible WTH meteorological files.</li>
+        <li>Integrated weather data into the CRAFT MySQL database, reducing manual preprocessing and improving operational usability.</li>
+        <li>Implemented multi-threading to accelerate the download, upload, and processing of meteorological files.</li>
+        <li>Explored and processed EO-based crop and crop-type masks, including SPAM data, to support crop-specific simulations.</li>
+        <li>Developed workflows to automate crop-mask and soil-mask preparation using country shapefiles, GeoTIFF files, grid cells, and soil profile data.</li>
       </ul>
-      <div class="ach-tags">
-        <span class="ach-tag">Python</span><span class="ach-tag">R</span><span class="ach-tag">CHIRPS</span>
-        <span class="ach-tag">ERA5</span><span class="ach-tag">NASA POWER</span><span class="ach-tag">CRAFT</span>
-      </div>`
-  },
-  {
-    icon: '🚀',
-    title: '>90% Runtime Reduction',
-    body: `
-      <p>The original CRAFT pipeline used ArcGIS Pro for all geoprocessing tasks — a proprietary, license-dependent toolchain with slow batch execution times. I replaced it entirely with open-source alternatives.</p>
+
+      <p><strong>Key Results</strong></p>
       <ul>
-        <li>Migrated spatial operations from ArcGIS to <strong>terra</strong>, <strong>sf</strong>, and <strong>raster</strong> in R, and <strong>geopandas</strong> / <strong>xarray</strong> in Python.</li>
-        <li>Operations that previously took 6–8 hours per country now complete in under 20 minutes.</li>
-        <li>Parallelized key bottlenecks (zonal statistics, grid resampling) across CPU cores.</li>
-        <li>Eliminated software licensing costs and enabled the tool to run on any machine or cloud environment.</li>
+        <li>Schema generation time reduced by over 90% through open-source R automation.</li>
+        <li>Weather-data upload time reduced by approximately 80% through optimized processing workflows.</li>
+        <li>ArcGIS-heavy processing replaced with reproducible R/Python workflows, lowering software dependency.</li>
+        <li>Automated weather-data ingestion from NASA POWER and CHIRPS into the CRAFT database.</li>
+        <li>Reusable workflows developed for shapefile preparation, grid matching, crop-mask and soil-mask generation.</li>
       </ul>
+
       <div class="ach-tags">
-        <span class="ach-tag">terra</span><span class="ach-tag">sf</span><span class="ach-tag">raster</span>
-        <span class="ach-tag">xarray</span><span class="ach-tag">geopandas</span><span class="ach-tag">parallel processing</span>
-      </div>`
-  },
-  {
-    icon: '🔓',
-    title: 'Open-Sourced CRAFT',
-    body: `
-      <p>CRAFT was originally tightly coupled to ArcGIS licenses and proprietary data formats, making it impossible to share or reproduce outside of licensed environments. I led the effort to make it fully open-source.</p>
-      <ul>
-        <li>Replaced every proprietary component with open-source equivalents (QGIS, R spatial packages, Python geospatial stack).</li>
-        <li>Documented the full workflow with reproducible scripts, configuration files, and README guides.</li>
-        <li>Lowered the barrier to entry for partner NGOs and national meteorological services in West Africa.</li>
-        <li>Enabled the tool to be deployed on low-cost infrastructure with no per-seat licensing.</li>
-      </ul>
-      <div class="ach-tags">
-        <span class="ach-tag">Open Source</span><span class="ach-tag">QGIS</span><span class="ach-tag">Reproducibility</span>
-        <span class="ach-tag">GitHub</span><span class="ach-tag">Documentation</span>
+        <span class="ach-tag">R</span><span class="ach-tag">Python</span><span class="ach-tag">C#</span>
+        <span class="ach-tag">CRAFT</span><span class="ach-tag">NASA POWER</span><span class="ach-tag">CHIRPS</span>
+        <span class="ach-tag">MySQL</span><span class="ach-tag">DSSAT</span><span class="ach-tag">SPAM</span><span class="ach-tag">QGIS</span>
       </div>`
   },
   {
@@ -145,7 +136,7 @@ const achData = [
         <li>Integrated <strong>30+ years</strong> of CHIRPS rainfall and ERA5 reanalysis data for trend and anomaly detection.</li>
         <li>Combined ACLED conflict event data with climate indicators to build compound-risk indices.</li>
         <li>Incorporated Cadre Harmonisé food security phase data (IPC) for ground-truth validation.</li>
-        <li>Standardized all datasets to a common 20×20 km grid to allow district-level aggregation across countries.</li>
+        <li>Standardized all datasets to a common 20x20 km grid to allow district-level aggregation across countries.</li>
       </ul>
       <div class="ach-tags">
         <span class="ach-tag">CHIRPS</span><span class="ach-tag">ERA5</span><span class="ach-tag">ACLED</span>
@@ -194,7 +185,7 @@ const achData = [
     icon: '🌾',
     title: 'Crop Yield Prediction with ML',
     body: `
-      <p>Accurate crop yield forecasts 1–3 months before harvest allow humanitarian organizations to respond before food crises materialize. I developed and validated ML models for this purpose.</p>
+      <p>Accurate crop yield forecasts 1 to 3 months before harvest allow humanitarian organizations to respond before food crises materialize. I developed and validated ML models for this purpose.</p>
       <ul>
         <li>Built <strong>Random Forest</strong> and <strong>GAM</strong> models using satellite-derived vegetation indices (NDVI, EVI), rainfall, temperature, and soil moisture as features.</li>
         <li>Achieved district-level crop yield estimates for maize, millet, and sorghum across West Africa.</li>
@@ -206,8 +197,7 @@ const achData = [
         <span class="ach-tag">Random Forest</span><span class="ach-tag">GAM</span><span class="ach-tag">NDVI</span>
         <span class="ach-tag">EVI</span><span class="ach-tag">Python</span><span class="ach-tag">R</span><span class="ach-tag">NASA</span>
       </div>`
-  }
-  ,
+  },
   {
     icon: '🏙️',
     title: 'Decision-Ready Spatial Analytics for FCV-Sensitive Urban Investment',
@@ -216,14 +206,14 @@ const achData = [
       <p>This project supported the World Bank's analytical work on secondary cities in Burkina Faso, examining how urban growth, infrastructure access, economic potential, conflict dynamics, displacement, and investment locations interact in fragile and conflict-affected settings. The objective was to produce decision-ready spatial evidence to support territorial planning, urban diagnostics, and resilient investment prioritization.</p>
 
       <p><strong>My Role</strong></p>
-      <p>I led the geospatial and analytical workstream — developing reproducible spatial workflows, harmonizing multi-source datasets, preparing city-level diagnostic workbooks, and producing maps and analytical visuals for technical and policy discussions. The analysis covered six cities: <em>Kaya, Ouagadougou, Bobo-Dioulasso, Fada N'Gourma, Ouahigouya, and Koudougou</em>.</p>
+      <p>I led the geospatial and analytical workstream, developing reproducible spatial workflows, harmonizing multi-source datasets, preparing city-level diagnostic workbooks, and producing maps and analytical visuals for technical and policy discussions. The analysis covered six cities: Kaya, Ouagadougou, Bobo-Dioulasso, Fada N'Gourma, Ouahigouya, and Koudougou.</p>
 
       <p><strong>Key Contributions</strong></p>
       <ul>
         <li>Developed reproducible geospatial workflows to generate comparable urban diagnostics across six cities.</li>
         <li>Integrated WSF built-up data, GEMS investment locations, ACLED conflict events, CONASUR displacement data, Africapolis, OSM road networks, VIIRS night-time lights, RGE 2024 economic units, and market access indicators.</li>
         <li>Produced city-level diagnostic workbooks combining indicators on urban growth, economic activity, infrastructure access, and FCV dynamics.</li>
-        <li>Contributed to Economic Potential Index mapping at commune level (economic activity, transport connectivity, market access, urban hierarchy).</li>
+        <li>Contributed to Economic Potential Index mapping at commune level: economic activity, transport connectivity, market access, and urban hierarchy.</li>
         <li>Developed a conflict-sensitive urban profile for Kaya, linking built-up expansion, conflict dynamics, and displacement trends.</li>
         <li>Produced decision-ready maps and figures for technical workshops and strategic policy dialogue.</li>
       </ul>
@@ -234,8 +224,8 @@ const achData = [
         <li>Economic Potential Index map layers</li>
         <li>Secondary-city geospatial maps</li>
         <li>Kaya conflict-sensitive urban profile</li>
-        <li>Built-up expansion analysis (WSF data)</li>
-        <li>Investment mapping (GEMS project locations)</li>
+        <li>Built-up expansion analysis using WSF data</li>
+        <li>Investment mapping using GEMS project locations</li>
         <li>Presentation-ready figures for policy discussions</li>
       </ul>
 

@@ -128,19 +128,40 @@ const achData = [
       </div>`
   },
   {
-    icon: '🌦️',
-    title: 'Multi-Source Climate Pipelines',
+    icon: '🛡️',
+    title: 'Climate, Conflict and Displacement Risk Mapping in the Central Sahel',
     body: `
-      <p>Building reliable early-warning systems requires integrating heterogeneous datasets with different spatial resolutions, time ranges, and formats. I engineered unified pipelines to handle this complexity.</p>
+      <p><strong>Project Overview</strong></p>
+      <p>This project analyzed how climate stress, armed conflict, displacement, and household vulnerability overlap across the Central Sahel. The study focused on Burkina Faso, Mali, and Niger, with particular attention to the Liptako-Gourma tri-border area, where climate-security risks and protection needs strongly converge.</p>
+      <p>The objective was to identify where exposure to climate-security hotspots overlaps with household-level protection vulnerability, and to support more targeted, risk-informed humanitarian planning.</p>
+
+      <p><strong>My Role</strong></p>
+      <p>I contributed to the spatial analysis and visualization workstream by supporting the integration of climate-security hotspot data and household protection vulnerability data. The work involved spatial overlay analysis, vulnerability mapping, hotspot interpretation, country-level comparison, and the preparation of maps and analytical visuals for technical and policy-oriented communication.</p>
+
+      <p><strong>Key Contributions</strong></p>
       <ul>
-        <li>Integrated <strong>30+ years</strong> of CHIRPS rainfall and ERA5 reanalysis data for trend and anomaly detection.</li>
-        <li>Combined ACLED conflict event data with climate indicators to build compound-risk indices.</li>
-        <li>Incorporated Cadre Harmonisé food security phase data (IPC) for ground-truth validation.</li>
-        <li>Standardized all datasets to a common 20x20 km grid to allow district-level aggregation across countries.</li>
+        <li>Supported spatial analysis linking climate-security hotspots with household protection vulnerability across Burkina Faso, Mali, and Niger.</li>
+        <li>Integrated climate-security risk layers with household vulnerability data to identify areas where exposure and protection needs overlap.</li>
+        <li>Produced maps showing the distribution of overall and critical household vulnerability at Admin 2 level.</li>
+        <li>Identified the Liptako-Gourma corridor as a key area of convergence between insecurity, climate stress, displacement pressure, and fragile livelihoods.</li>
+        <li>Compared areas where high exposure aligns with high vulnerability against areas where they diverge, helping highlight potential blind spots for targeting.</li>
+        <li>Supported the interpretation of results for humanitarian planning, protection analysis, displacement risk, and anticipatory action.</li>
+        <li>Helped translate complex spatial risk analysis into clear visual products and messages for policy and operational audiences.</li>
       </ul>
+
+      <p><strong>Key Results</strong></p>
+      <ul>
+        <li>Mapped the spatial convergence between climate-security risk and household protection vulnerability in the Central Sahel.</li>
+        <li>Identified the Liptako-Gourma corridor as a priority area where climate stress, conflict, displacement, and vulnerability overlap.</li>
+        <li>Highlighted differentiated national patterns: stronger overlap in Burkina Faso, concentrated vulnerability in Mali, and more localized patterns in Niger.</li>
+        <li>Demonstrated that exposure and vulnerability are related but distinct, supporting the need for two-layer targeting rather than risk-only targeting.</li>
+        <li>Produced decision-ready maps and analytical narratives for humanitarian protection, resilience, and anticipatory action.</li>
+      </ul>
+
       <div class="ach-tags">
-        <span class="ach-tag">CHIRPS</span><span class="ach-tag">ERA5</span><span class="ach-tag">ACLED</span>
-        <span class="ach-tag">Cadre Harmonisé</span><span class="ach-tag">IPC</span><span class="ach-tag">Python</span><span class="ach-tag">R</span>
+        <span class="ach-tag">R</span><span class="ach-tag">Python</span><span class="ach-tag">GIS</span>
+        <span class="ach-tag">ACLED</span><span class="ach-tag">UNHCR</span><span class="ach-tag">Admin 2</span>
+        <span class="ach-tag">Vulnerability mapping</span><span class="ach-tag">Liptako-Gourma</span>
       </div>`
   },
   {

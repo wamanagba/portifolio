@@ -297,6 +297,56 @@ a:hover { color: var(--accent); }
 .award-item div h4 { font-size: .9rem; font-weight: 600; color: var(--text); }
 .award-item div p { font-size: .8rem; color: var(--text2); }
 
+/* ===== ACHIEVEMENT MODAL ===== */
+.ach-more-btn {
+  margin-top: 14px; background: none; border: 1px solid var(--border);
+  color: var(--accent2); font-size: .82rem; font-weight: 500;
+  padding: 6px 14px; border-radius: 20px; cursor: pointer;
+  transition: all .2s;
+}
+.ach-more-btn:hover { background: var(--accent2); color: #000; border-color: var(--accent2); }
+
+.ach-modal-overlay {
+  position: fixed; inset: 0; z-index: 200;
+  background: rgba(0,0,0,.7); backdrop-filter: blur(4px);
+  display: flex; align-items: center; justify-content: center;
+  padding: 24px;
+  opacity: 0; pointer-events: none;
+  transition: opacity .25s;
+}
+.ach-modal-overlay.open { opacity: 1; pointer-events: all; }
+
+.ach-modal {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 40px 36px;
+  max-width: 560px; width: 100%; position: relative;
+  transform: translateY(20px); transition: transform .25s;
+  max-height: 85vh; overflow-y: auto;
+}
+.ach-modal-overlay.open .ach-modal { transform: translateY(0); }
+
+.ach-modal-close {
+  position: absolute; top: 16px; right: 16px;
+  background: var(--surface2); border: 1px solid var(--border);
+  color: var(--text2); width: 32px; height: 32px; border-radius: 50%;
+  cursor: pointer; font-size: .9rem; line-height: 32px; text-align: center;
+  transition: all .2s;
+}
+.ach-modal-close:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+.ach-modal-icon { font-size: 2.4rem; margin-bottom: 12px; }
+.ach-modal-title { font-size: 1.3rem; font-weight: 700; margin-bottom: 20px; color: var(--text); }
+.ach-modal-body { color: var(--text2); font-size: .925rem; line-height: 1.75; }
+.ach-modal-body p { margin-bottom: 12px; }
+.ach-modal-body ul { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px; }
+.ach-modal-body ul li { padding-left: 16px; position: relative; }
+.ach-modal-body ul li::before { content: '▸'; position: absolute; left: 0; color: var(--accent); }
+.ach-modal-body .ach-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.ach-modal-body .ach-tag {
+  background: var(--surface2); border: 1px solid var(--border);
+  padding: 4px 12px; border-radius: 16px; font-size: .78rem;
+  color: var(--accent2); font-family: 'JetBrains Mono', monospace;
+}
+
 /* ===== PROJECTS ===== */
 .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; }
 .project-card {

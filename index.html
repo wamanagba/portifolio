@@ -136,42 +136,58 @@
       <h2 class="section-title">Key Achievements</h2>
       <div class="achievements-grid">
 
-        <div class="achievement-card">
+        <div class="achievement-card" data-ach="0">
           <div class="ach-icon">⚡</div>
           <h3>CRAFT Automation — 100%</h3>
           <p>Fully automated climate data ingestion into CRAFT, enabling scheduled and reproducible end-to-end runs across Sahel countries.</p>
+          <button class="ach-more-btn">Read more →</button>
         </div>
 
-        <div class="achievement-card">
+        <div class="achievement-card" data-ach="1">
           <div class="ach-icon">🚀</div>
           <h3>&gt;90% Runtime Reduction</h3>
           <p>Replaced ArcGIS geoprocessing with open-source R/Python pipelines (terra, sf, raster), cutting compute time by over 90%.</p>
+          <button class="ach-more-btn">Read more →</button>
         </div>
 
-        <div class="achievement-card">
+        <div class="achievement-card" data-ach="2">
           <div class="ach-icon">🔓</div>
           <h3>Open-Sourced CRAFT</h3>
           <p>Removed proprietary dependencies and delivered a portable, reproducible open-source stack with lower total cost of ownership.</p>
+          <button class="ach-more-btn">Read more →</button>
         </div>
 
-        <div class="achievement-card">
+        <div class="achievement-card" data-ach="3">
           <div class="ach-icon">🌦️</div>
           <h3>Multi-Source Pipelines</h3>
           <p>Engineered R/Python workflows integrating 30+ years of CHIRPS and ERA5 climate data, ACLED conflict data, and Cadre Harmonisé food security indicators.</p>
+          <button class="ach-more-btn">Read more →</button>
         </div>
 
-        <div class="achievement-card">
+        <div class="achievement-card" data-ach="4">
           <div class="ach-icon">🗺️</div>
           <h3>Composite Indices & Mapping</h3>
           <p>Built PCA-based conflict–climate indices and 20×20 km risk grids; produced vulnerability maps used by WFP, UNHCR, and CIAT.</p>
+          <button class="ach-more-btn">Read more →</button>
         </div>
 
-        <div class="achievement-card">
+        <div class="achievement-card" data-ach="5">
           <div class="ach-icon">🌾</div>
           <h3>Crop Yield Prediction (ML)</h3>
           <p>Built and validated ML models (Random Forest, GAM) using climate and EO features to forecast district-level crop yields in West Africa.</p>
+          <button class="ach-more-btn">Read more →</button>
         </div>
 
+      </div>
+
+      <!-- Achievement Modal -->
+      <div class="ach-modal-overlay" id="achOverlay">
+        <div class="ach-modal" id="achModal">
+          <button class="ach-modal-close" id="achClose">✕</button>
+          <div class="ach-modal-icon" id="achModalIcon"></div>
+          <h3 class="ach-modal-title" id="achModalTitle"></h3>
+          <div class="ach-modal-body" id="achModalBody"></div>
+        </div>
       </div>
     </div>
   </section>

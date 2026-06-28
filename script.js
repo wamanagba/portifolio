@@ -274,6 +274,44 @@ const achData = [
         <span class="ach-tag">ACLED</span><span class="ach-tag">WSF</span><span class="ach-tag">VIIRS</span>
         <span class="ach-tag">OSM</span><span class="ach-tag">GEMS</span><span class="ach-tag">World Bank</span>
       </div>`
+  },
+  {
+    icon: '🌧️',
+    title: 'Automated Climate Monitoring for Resilient Agriculture in Africa',
+    body: `
+      <p><strong>Project Overview</strong></p>
+      <p>This project focused on the development of automated climate-data analysis workflows to support resilient agriculture and early warning systems in Africa. The objective was to transform near-real-time rainfall data into operational climate information products for monitoring drought conditions, detecting dry spells, assessing rainfall performance, and supporting timely decision-making for farmers, climate services, and agricultural planning.</p>
+
+      <p><strong>My Role</strong></p>
+      <p>I contributed to the automation, processing, analysis, and visualization of rainfall-based climate indicators. My work involved developing scripts to download and process climate data, building historical databases of rainfall indices, producing maps and monitoring products, and supporting real-time climate monitoring for agricultural decision-making.</p>
+
+      <p><strong>Key Contributions</strong></p>
+      <ul>
+        <li>Developed scripts to automatically download, process, and generate periodic climate information products.</li>
+        <li>Built historical databases of rainfall indices at monthly and seasonal timescales across Africa.</li>
+        <li>Computed key agroclimatic indicators: number of rainy days, dry spells longer than 10 days, rainfall above 20 mm and 50 mm, and precipitation anomalies.</li>
+        <li>Produced historical map atlases to help users identify rainfall patterns, dry-spell-prone areas, and recurring seasonal anomalies.</li>
+        <li>Conducted trend analysis of rainfall indicators, including changes in rainy days, dry-spell frequency, dry-spell length, and heavy rainfall days.</li>
+        <li>Developed automated monthly monitoring outputs for dry spells, mean dry-spell duration, and maximum dry-spell length.</li>
+        <li>Supported daily monitoring workflows to detect emerging drought pockets and inform early warning systems.</li>
+        <li>Calculated precipitation as a percent of average at dekadal timescale to monitor rainfall deficits and excesses.</li>
+        <li>Contributed to the development of an onset method algorithm to identify the beginning of the agricultural season.</li>
+      </ul>
+
+      <p><strong>Key Results</strong></p>
+      <ul>
+        <li>Automated production of rainfall monitoring indicators for agricultural early warning.</li>
+        <li>Historical rainfall-index databases built to support climate diagnostics and seasonal monitoring.</li>
+        <li>Map-based products developed to visualize dry spells, rainy days, rainfall anomalies, and drought-prone areas.</li>
+        <li>Real-time monitoring of climate indices enabled detection of emerging drought pockets.</li>
+        <li>Climate information products produced to support resilient agriculture, seasonal planning, and anticipatory action.</li>
+      </ul>
+
+      <div class="ach-tags">
+        <span class="ach-tag">R</span><span class="ach-tag">CHIRPS</span><span class="ach-tag">CPC-UNIFIED</span>
+        <span class="ach-tag">CAMS-OPI</span><span class="ach-tag">Dry spell detection</span>
+        <span class="ach-tag">Onset monitoring</span><span class="ach-tag">ACMAD</span><span class="ach-tag">Early warning</span>
+      </div>`
   }
 ];
 

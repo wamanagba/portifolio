@@ -183,19 +183,38 @@ const achData = [
   },
   {
     icon: '🌾',
-    title: 'Crop Yield Prediction with ML',
+    title: 'Machine Learning for Crop Yield Prediction in Burkina Faso',
     body: `
-      <p>Accurate crop yield forecasts 1 to 3 months before harvest allow humanitarian organizations to respond before food crises materialize. I developed and validated ML models for this purpose.</p>
+      <p><strong>Project Overview</strong></p>
+      <p>This research project focused on estimating crop yields in Burkina Faso using meteorological variables, extreme climate indices, and large-scale climate drivers. The objective was to better understand how climate variability affects staple crop production and to explore the potential of machine learning for agricultural forecasting and food security early warning.</p>
+      <p>The study covered three major staple crops: maize, millet, and sorghum, which are central to food security in Burkina Faso and highly vulnerable to droughts, heat stress, and climate variability.</p>
+
+      <p><strong>My Role</strong></p>
+      <p>I designed and implemented the full analytical workflow, from data processing and climate indicator construction to model development, evaluation, and interpretation. The work combined agricultural yield data, gridded meteorological datasets, extreme weather indices, and large-scale climate drivers to predict crop yields at provincial and national levels.</p>
+
+      <p><strong>Key Contributions</strong></p>
       <ul>
-        <li>Built <strong>Random Forest</strong> and <strong>GAM</strong> models using satellite-derived vegetation indices (NDVI, EVI), rainfall, temperature, and soil moisture as features.</li>
-        <li>Achieved district-level crop yield estimates for maize, millet, and sorghum across West Africa.</li>
-        <li>Validated models against historical yield survey data and agronomic benchmarks.</li>
-        <li>Integrated forecasts into anticipatory action triggers for the Red Cross Forecast-based Financing (FbF) programme.</li>
-        <li>Prototyped near-real-time workflows during a visiting research stay at <strong>NASA</strong>.</li>
+        <li>Built crop yield prediction models for maize, millet, and sorghum using linear and non-linear machine learning methods.</li>
+        <li>Compared Ridge, Lasso, Random Forest, and Decision Tree models across crops and regions.</li>
+        <li>Processed agricultural yield data for 45 provinces of Burkina Faso covering the period 2000 to 2016.</li>
+        <li>Integrated multiple climate datasets: precipitation, temperature, wind, soil moisture, NDVI, and sea surface temperature-based climate indices.</li>
+        <li>Constructed extreme climate indicators including consecutive dry days, wet days, heavy rainfall days, maximum temperature indices, and precipitation intensity indicators.</li>
+        <li>Assessed the spatial variability of model performance across provinces and crop types.</li>
+        <li>Demonstrated the potential of climate drivers to estimate crop yields before the beginning of the agricultural season.</li>
       </ul>
+
+      <p><strong>Key Results</strong></p>
+      <ul>
+        <li>Climate drivers can be used as early indicators for agricultural yield forecasting before the growing season starts.</li>
+        <li>Extreme weather indices and climate drivers explain a significant share of crop yield variability.</li>
+        <li>Model performance varies by crop and geography, with stronger results for maize in central provinces and sorghum in western provinces.</li>
+        <li>Key predictors identified include rainfall-based indicators, temperature extremes, and large-scale climate indices.</li>
+      </ul>
+
       <div class="ach-tags">
-        <span class="ach-tag">Random Forest</span><span class="ach-tag">GAM</span><span class="ach-tag">NDVI</span>
-        <span class="ach-tag">EVI</span><span class="ach-tag">Python</span><span class="ach-tag">R</span><span class="ach-tag">NASA</span>
+        <span class="ach-tag">Python</span><span class="ach-tag">R</span><span class="ach-tag">Random Forest</span>
+        <span class="ach-tag">Ridge / Lasso</span><span class="ach-tag">Decision Tree</span><span class="ach-tag">NDVI</span>
+        <span class="ach-tag">Gridded climate data</span><span class="ach-tag">Extreme indices</span>
       </div>`
   },
   {

@@ -154,19 +154,40 @@ const achData = [
   },
   {
     icon: '🗺️',
-    title: 'Composite Indices & Vulnerability Mapping',
+    title: 'Climate-Conflict Early Warning Analytics for Food Crisis Anticipation',
     body: `
-      <p>Rather than treating climate and conflict data separately, I developed composite indices that capture their interaction — a key factor in Sahel food insecurity dynamics.</p>
+      <p><strong>Project Overview</strong></p>
+      <p>This project focused on integrating climate and conflict risks into food crisis early warning systems in the Sahel. The goal was to develop a Conflict-Climate Pressure Index capable of identifying districts at risk of acute food insecurity before the Cadre Harmonisé evaluation cycle.</p>
+      <p>The work combined conflict dynamics, climate stressors, flood indicators, and food security outcomes to generate operational alerts for humanitarian decision-making. The analysis covered Sahelian countries, with a specific focus on Burkina Faso and Mali for national calibration.</p>
+
+      <p><strong>My Role</strong></p>
+      <p>I worked as a spatial analyst on the development, testing, and visualization of early warning indices. My work covered data processing, indicator construction, spatial aggregation, threshold calibration, performance evaluation, and the production of maps and analytical visuals for partners.</p>
+
+      <p><strong>Key Contributions</strong></p>
       <ul>
-        <li>Applied <strong>PCA (Principal Component Analysis)</strong> to compress multi-variable climate and conflict signals into interpretable composite risk scores.</li>
-        <li>Built a <strong>20×20 km gridded methodology</strong> covering 8 Sahelian countries, enabling sub-national targeting.</li>
-        <li>Identified <strong>32 high-risk districts</strong> for anticipatory action — used by WFP to pre-position food aid.</li>
-        <li>Produced UNHCR displacement risk maps integrating SPEI-3 drought index and conflict intensity layers.</li>
-        <li>Maps were adopted by CIAT's Climate Security Observatory as reference products.</li>
+        <li>Supported the development of the Conflict-Climate Pressure Index, combining conflict intensity and climate stress to anticipate food crises.</li>
+        <li>Built and tested the Conflict Intensity Index using ACLED variables: conflict events, fatalities, actor diversity, event-type diversity, violence severity, and conflict diffusion.</li>
+        <li>Contributed to the Climate Stress Index by integrating rainfall, rainy days, dry spells, hot days, SPEI-3 drought conditions, and flood variables.</li>
+        <li>Processed and aggregated climate and conflict data on a 20 km grid to create spatially comparable risk indicators across districts and countries.</li>
+        <li>Supported threshold calibration using Cadre Harmonisé Phase 3+ prevalence as the target outcome, and compared regional versus country-specific thresholds.</li>
+        <li>Contributed to the Burkina Faso and Mali national deep-dive, evaluating country-specific alert thresholds for conflict and climate indicators.</li>
+        <li>Tested different index combination approaches: additive, conditional mean/max, and quadrant classification.</li>
+        <li>Produced maps, figures, and analytical slides showing spatial relationships between conflict pressure, climate stress, compound risk, and food insecurity.</li>
       </ul>
+
+      <p><strong>Key Results</strong></p>
+      <ul>
+        <li>Early warning analytics linking climate stress, conflict intensity, and acute food insecurity across the Sahel.</li>
+        <li>Spatial indicators on a 20 km grid supporting comparable risk analysis across countries.</li>
+        <li>National calibration for Burkina Faso and Mali improving local alert performance.</li>
+        <li>Flood risk integrated into the Climate Stress Index to capture compound climate hazards.</li>
+        <li>Decision-ready maps and visuals for humanitarian early warning and planning.</li>
+      </ul>
+
       <div class="ach-tags">
-        <span class="ach-tag">PCA</span><span class="ach-tag">SPEI-3</span><span class="ach-tag">WFP</span>
-        <span class="ach-tag">UNHCR</span><span class="ach-tag">CIAT</span><span class="ach-tag">QGIS</span>
+        <span class="ach-tag">R</span><span class="ach-tag">Python</span><span class="ach-tag">ACLED</span>
+        <span class="ach-tag">SPEI-3</span><span class="ach-tag">GloFAS</span><span class="ach-tag">PCA</span>
+        <span class="ach-tag">Cadre Harmonisé</span><span class="ach-tag">20km grid</span><span class="ach-tag">WFP</span>
       </div>`
   },
   {

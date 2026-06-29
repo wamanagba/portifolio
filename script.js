@@ -87,7 +87,120 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 });
 
 // Achievement modal
+// Order: 0=FCV Urban, 1=Central Sahel, 2=Climate-Conflict EW, 3=CRAFT, 4=Climate Monitoring, 5=Crop Yield
 const achData = [
+  {
+    icon: '🏙️',
+    title: 'Decision-Ready Spatial Analytics for FCV-Sensitive Urban Investment',
+    body: `
+      <p><strong>Project Overview</strong></p>
+      <p>This project supported the World Bank's analytical work on secondary cities in Burkina Faso, examining how urban growth, infrastructure access, economic potential, conflict dynamics, displacement, and investment locations interact in fragile and conflict-affected settings. The objective was to produce decision-ready spatial evidence to support territorial planning, urban diagnostics, and resilient investment prioritization.</p>
+
+      <p><strong>My Role</strong></p>
+      <p>I led the geospatial and analytical workstream, developing reproducible spatial workflows, harmonizing multi-source datasets, preparing city-level diagnostic workbooks, and producing maps and analytical visuals for technical and policy discussions. The analysis covered six cities: Kaya, Ouagadougou, Bobo-Dioulasso, Fada N'Gourma, Ouahigouya, and Koudougou.</p>
+
+      <p><strong>Key Contributions</strong></p>
+      <ul>
+        <li>Developed reproducible geospatial workflows to generate comparable urban diagnostics across six cities.</li>
+        <li>Integrated WSF built-up data, GEMS investment locations, ACLED conflict events, CONASUR displacement data, Africapolis, OSM road networks, VIIRS night-time lights, RGE 2024 economic units, and market access indicators.</li>
+        <li>Produced city-level diagnostic workbooks combining indicators on urban growth, economic activity, infrastructure access, and FCV dynamics.</li>
+        <li>Contributed to Economic Potential Index mapping at commune level: economic activity, transport connectivity, market access, and urban hierarchy.</li>
+        <li>Developed a conflict-sensitive urban profile for Kaya, linking built-up expansion, conflict dynamics, and displacement trends.</li>
+        <li>Produced decision-ready maps and figures for technical workshops and strategic policy dialogue.</li>
+      </ul>
+
+      <p><strong>Outputs</strong></p>
+      <ul>
+        <li>Six city-level diagnostic workbooks</li>
+        <li>Economic Potential Index map layers</li>
+        <li>Secondary-city geospatial maps</li>
+        <li>Kaya conflict-sensitive urban profile</li>
+        <li>Built-up expansion analysis using WSF data</li>
+        <li>Investment mapping using GEMS project locations</li>
+        <li>Presentation-ready figures for policy discussions</li>
+      </ul>
+
+      <div class="ach-tags">
+        <span class="ach-tag">R</span><span class="ach-tag">Python</span><span class="ach-tag">QGIS</span>
+        <span class="ach-tag">ACLED</span><span class="ach-tag">WSF</span><span class="ach-tag">VIIRS</span>
+        <span class="ach-tag">OSM</span><span class="ach-tag">GEMS</span><span class="ach-tag">World Bank</span>
+      </div>`
+  },
+  {
+    icon: '🛡️',
+    title: 'Climate, Conflict and Displacement Risk Mapping in the Central Sahel',
+    body: `
+      <p><strong>Project Overview</strong></p>
+      <p>This project analyzed how climate stress, armed conflict, displacement, and household vulnerability overlap across the Central Sahel. The study focused on Burkina Faso, Mali, and Niger, with particular attention to the Liptako-Gourma tri-border area, where climate-security risks and protection needs strongly converge.</p>
+      <p>The objective was to identify where exposure to climate-security hotspots overlaps with household-level protection vulnerability, and to support more targeted, risk-informed humanitarian planning.</p>
+
+      <p><strong>My Role</strong></p>
+      <p>I contributed to the spatial analysis and visualization workstream by supporting the integration of climate-security hotspot data and household protection vulnerability data. The work involved spatial overlay analysis, vulnerability mapping, hotspot interpretation, country-level comparison, and the preparation of maps and analytical visuals for technical and policy-oriented communication.</p>
+
+      <p><strong>Key Contributions</strong></p>
+      <ul>
+        <li>Supported spatial analysis linking climate-security hotspots with household protection vulnerability across Burkina Faso, Mali, and Niger.</li>
+        <li>Integrated climate-security risk layers with household vulnerability data to identify areas where exposure and protection needs overlap.</li>
+        <li>Produced maps showing the distribution of overall and critical household vulnerability at Admin 2 level.</li>
+        <li>Identified the Liptako-Gourma corridor as a key area of convergence between insecurity, climate stress, displacement pressure, and fragile livelihoods.</li>
+        <li>Compared areas where high exposure aligns with high vulnerability against areas where they diverge, helping highlight potential blind spots for targeting.</li>
+        <li>Supported the interpretation of results for humanitarian planning, protection analysis, displacement risk, and anticipatory action.</li>
+        <li>Helped translate complex spatial risk analysis into clear visual products and messages for policy and operational audiences.</li>
+      </ul>
+
+      <p><strong>Key Results</strong></p>
+      <ul>
+        <li>Mapped the spatial convergence between climate-security risk and household protection vulnerability in the Central Sahel.</li>
+        <li>Identified the Liptako-Gourma corridor as a priority area where climate stress, conflict, displacement, and vulnerability overlap.</li>
+        <li>Highlighted differentiated national patterns: stronger overlap in Burkina Faso, concentrated vulnerability in Mali, and more localized patterns in Niger.</li>
+        <li>Demonstrated that exposure and vulnerability are related but distinct, supporting the need for two-layer targeting rather than risk-only targeting.</li>
+        <li>Produced decision-ready maps and analytical narratives for humanitarian protection, resilience, and anticipatory action.</li>
+      </ul>
+
+      <div class="ach-tags">
+        <span class="ach-tag">R</span><span class="ach-tag">Python</span><span class="ach-tag">GIS</span>
+        <span class="ach-tag">ACLED</span><span class="ach-tag">UNHCR</span><span class="ach-tag">Admin 2</span>
+        <span class="ach-tag">Vulnerability mapping</span><span class="ach-tag">Liptako-Gourma</span>
+      </div>`
+  },
+  {
+    icon: '🗺️',
+    title: 'Climate-Conflict Early Warning Analytics for Food Crisis Anticipation',
+    body: `
+      <p><strong>Project Overview</strong></p>
+      <p>This project focused on integrating climate and conflict risks into food crisis early warning systems in the Sahel. The goal was to develop a Conflict-Climate Pressure Index capable of identifying districts at risk of acute food insecurity before the Cadre Harmonisé evaluation cycle.</p>
+      <p>The work combined conflict dynamics, climate stressors, flood indicators, and food security outcomes to generate operational alerts for humanitarian decision-making. The analysis covered Sahelian countries, with a specific focus on Burkina Faso and Mali for national calibration.</p>
+
+      <p><strong>My Role</strong></p>
+      <p>I worked as a spatial analyst on the development, testing, and visualization of early warning indices. My work covered data processing, indicator construction, spatial aggregation, threshold calibration, performance evaluation, and the production of maps and analytical visuals for partners.</p>
+
+      <p><strong>Key Contributions</strong></p>
+      <ul>
+        <li>Supported the development of the Conflict-Climate Pressure Index, combining conflict intensity and climate stress to anticipate food crises.</li>
+        <li>Built and tested the Conflict Intensity Index using ACLED variables: conflict events, fatalities, actor diversity, event-type diversity, violence severity, and conflict diffusion.</li>
+        <li>Contributed to the Climate Stress Index by integrating rainfall, rainy days, dry spells, hot days, SPEI-3 drought conditions, and flood variables.</li>
+        <li>Processed and aggregated climate and conflict data on a 20 km grid to create spatially comparable risk indicators across districts and countries.</li>
+        <li>Supported threshold calibration using Cadre Harmonisé Phase 3+ prevalence as the target outcome, and compared regional versus country-specific thresholds.</li>
+        <li>Contributed to the Burkina Faso and Mali national deep-dive, evaluating country-specific alert thresholds for conflict and climate indicators.</li>
+        <li>Tested different index combination approaches: additive, conditional mean/max, and quadrant classification.</li>
+        <li>Produced maps, figures, and analytical slides showing spatial relationships between conflict pressure, climate stress, compound risk, and food insecurity.</li>
+      </ul>
+
+      <p><strong>Key Results</strong></p>
+      <ul>
+        <li>Early warning analytics linking climate stress, conflict intensity, and acute food insecurity across the Sahel.</li>
+        <li>Spatial indicators on a 20 km grid supporting comparable risk analysis across countries.</li>
+        <li>National calibration for Burkina Faso and Mali improving local alert performance.</li>
+        <li>Flood risk integrated into the Climate Stress Index to capture compound climate hazards.</li>
+        <li>Decision-ready maps and visuals for humanitarian early warning and planning.</li>
+      </ul>
+
+      <div class="ach-tags">
+        <span class="ach-tag">R</span><span class="ach-tag">Python</span><span class="ach-tag">ACLED</span>
+        <span class="ach-tag">SPEI-3</span><span class="ach-tag">GloFAS</span><span class="ach-tag">PCA</span>
+        <span class="ach-tag">Cadre Harmonisé</span><span class="ach-tag">20km grid</span><span class="ach-tag">WFP</span>
+      </div>`
+  },
   {
     icon: '⚙️',
     title: 'Open-Source Automation of CRAFT Forecasting Workflows',
@@ -203,79 +316,6 @@ const achData = [
       </div>`
   },
   {
-    icon: '🌾',
-    title: 'Machine Learning for Crop Yield Prediction in Burkina Faso',
-    body: `
-      <p><strong>Project Overview</strong></p>
-      <p>This research project focused on estimating crop yields in Burkina Faso using meteorological variables, extreme climate indices, and large-scale climate drivers. The objective was to better understand how climate variability affects staple crop production and to explore the potential of machine learning for agricultural forecasting and food security early warning.</p>
-      <p>The study covered three major staple crops: maize, millet, and sorghum, which are central to food security in Burkina Faso and highly vulnerable to droughts, heat stress, and climate variability.</p>
-
-      <p><strong>My Role</strong></p>
-      <p>I designed and implemented the full analytical workflow, from data processing and climate indicator construction to model development, evaluation, and interpretation. The work combined agricultural yield data, gridded meteorological datasets, extreme weather indices, and large-scale climate drivers to predict crop yields at provincial and national levels.</p>
-
-      <p><strong>Key Contributions</strong></p>
-      <ul>
-        <li>Built crop yield prediction models for maize, millet, and sorghum using linear and non-linear machine learning methods.</li>
-        <li>Compared Ridge, Lasso, Random Forest, and Decision Tree models across crops and regions.</li>
-        <li>Processed agricultural yield data for 45 provinces of Burkina Faso covering the period 2000 to 2016.</li>
-        <li>Integrated multiple climate datasets: precipitation, temperature, wind, soil moisture, NDVI, and sea surface temperature-based climate indices.</li>
-        <li>Constructed extreme climate indicators including consecutive dry days, wet days, heavy rainfall days, maximum temperature indices, and precipitation intensity indicators.</li>
-        <li>Assessed the spatial variability of model performance across provinces and crop types.</li>
-        <li>Demonstrated the potential of climate drivers to estimate crop yields before the beginning of the agricultural season.</li>
-      </ul>
-
-      <p><strong>Key Results</strong></p>
-      <ul>
-        <li>Climate drivers can be used as early indicators for agricultural yield forecasting before the growing season starts.</li>
-        <li>Extreme weather indices and climate drivers explain a significant share of crop yield variability.</li>
-        <li>Model performance varies by crop and geography, with stronger results for maize in central provinces and sorghum in western provinces.</li>
-        <li>Key predictors identified include rainfall-based indicators, temperature extremes, and large-scale climate indices.</li>
-      </ul>
-
-      <div class="ach-tags">
-        <span class="ach-tag">Python</span><span class="ach-tag">R</span><span class="ach-tag">Random Forest</span>
-        <span class="ach-tag">Ridge / Lasso</span><span class="ach-tag">Decision Tree</span><span class="ach-tag">NDVI</span>
-        <span class="ach-tag">Gridded climate data</span><span class="ach-tag">Extreme indices</span>
-      </div>`
-  },
-  {
-    icon: '🏙️',
-    title: 'Decision-Ready Spatial Analytics for FCV-Sensitive Urban Investment',
-    body: `
-      <p><strong>Project Overview</strong></p>
-      <p>This project supported the World Bank's analytical work on secondary cities in Burkina Faso, examining how urban growth, infrastructure access, economic potential, conflict dynamics, displacement, and investment locations interact in fragile and conflict-affected settings. The objective was to produce decision-ready spatial evidence to support territorial planning, urban diagnostics, and resilient investment prioritization.</p>
-
-      <p><strong>My Role</strong></p>
-      <p>I led the geospatial and analytical workstream, developing reproducible spatial workflows, harmonizing multi-source datasets, preparing city-level diagnostic workbooks, and producing maps and analytical visuals for technical and policy discussions. The analysis covered six cities: Kaya, Ouagadougou, Bobo-Dioulasso, Fada N'Gourma, Ouahigouya, and Koudougou.</p>
-
-      <p><strong>Key Contributions</strong></p>
-      <ul>
-        <li>Developed reproducible geospatial workflows to generate comparable urban diagnostics across six cities.</li>
-        <li>Integrated WSF built-up data, GEMS investment locations, ACLED conflict events, CONASUR displacement data, Africapolis, OSM road networks, VIIRS night-time lights, RGE 2024 economic units, and market access indicators.</li>
-        <li>Produced city-level diagnostic workbooks combining indicators on urban growth, economic activity, infrastructure access, and FCV dynamics.</li>
-        <li>Contributed to Economic Potential Index mapping at commune level: economic activity, transport connectivity, market access, and urban hierarchy.</li>
-        <li>Developed a conflict-sensitive urban profile for Kaya, linking built-up expansion, conflict dynamics, and displacement trends.</li>
-        <li>Produced decision-ready maps and figures for technical workshops and strategic policy dialogue.</li>
-      </ul>
-
-      <p><strong>Outputs</strong></p>
-      <ul>
-        <li>Six city-level diagnostic workbooks</li>
-        <li>Economic Potential Index map layers</li>
-        <li>Secondary-city geospatial maps</li>
-        <li>Kaya conflict-sensitive urban profile</li>
-        <li>Built-up expansion analysis using WSF data</li>
-        <li>Investment mapping using GEMS project locations</li>
-        <li>Presentation-ready figures for policy discussions</li>
-      </ul>
-
-      <div class="ach-tags">
-        <span class="ach-tag">R</span><span class="ach-tag">Python</span><span class="ach-tag">QGIS</span>
-        <span class="ach-tag">ACLED</span><span class="ach-tag">WSF</span><span class="ach-tag">VIIRS</span>
-        <span class="ach-tag">OSM</span><span class="ach-tag">GEMS</span><span class="ach-tag">World Bank</span>
-      </div>`
-  },
-  {
     icon: '🌧️',
     title: 'Automated Climate Monitoring for Resilient Agriculture in Africa',
     body: `
@@ -312,7 +352,43 @@ const achData = [
         <span class="ach-tag">CAMS-OPI</span><span class="ach-tag">Dry spell detection</span>
         <span class="ach-tag">Onset monitoring</span><span class="ach-tag">ACMAD</span><span class="ach-tag">Early warning</span>
       </div>`
-  }
+  },
+  {
+    icon: '🌾',
+    title: 'Machine Learning for Crop Yield Prediction in Burkina Faso',
+    body: `
+      <p><strong>Project Overview</strong></p>
+      <p>This research project focused on estimating crop yields in Burkina Faso using meteorological variables, extreme climate indices, and large-scale climate drivers. The objective was to better understand how climate variability affects staple crop production and to explore the potential of machine learning for agricultural forecasting and food security early warning.</p>
+      <p>The study covered three major staple crops: maize, millet, and sorghum, which are central to food security in Burkina Faso and highly vulnerable to droughts, heat stress, and climate variability.</p>
+
+      <p><strong>My Role</strong></p>
+      <p>I designed and implemented the full analytical workflow, from data processing and climate indicator construction to model development, evaluation, and interpretation. The work combined agricultural yield data, gridded meteorological datasets, extreme weather indices, and large-scale climate drivers to predict crop yields at provincial and national levels.</p>
+
+      <p><strong>Key Contributions</strong></p>
+      <ul>
+        <li>Built crop yield prediction models for maize, millet, and sorghum using linear and non-linear machine learning methods.</li>
+        <li>Compared Ridge, Lasso, Random Forest, and Decision Tree models across crops and regions.</li>
+        <li>Processed agricultural yield data for 45 provinces of Burkina Faso covering the period 2000 to 2016.</li>
+        <li>Integrated multiple climate datasets: precipitation, temperature, wind, soil moisture, NDVI, and sea surface temperature-based climate indices.</li>
+        <li>Constructed extreme climate indicators including consecutive dry days, wet days, heavy rainfall days, maximum temperature indices, and precipitation intensity indicators.</li>
+        <li>Assessed the spatial variability of model performance across provinces and crop types.</li>
+        <li>Demonstrated the potential of climate drivers to estimate crop yields before the beginning of the agricultural season.</li>
+      </ul>
+
+      <p><strong>Key Results</strong></p>
+      <ul>
+        <li>Climate drivers can be used as early indicators for agricultural yield forecasting before the growing season starts.</li>
+        <li>Extreme weather indices and climate drivers explain a significant share of crop yield variability.</li>
+        <li>Model performance varies by crop and geography, with stronger results for maize in central provinces and sorghum in western provinces.</li>
+        <li>Key predictors identified include rainfall-based indicators, temperature extremes, and large-scale climate indices.</li>
+      </ul>
+
+      <div class="ach-tags">
+        <span class="ach-tag">Python</span><span class="ach-tag">R</span><span class="ach-tag">Random Forest</span>
+        <span class="ach-tag">Ridge / Lasso</span><span class="ach-tag">Decision Tree</span><span class="ach-tag">NDVI</span>
+        <span class="ach-tag">Gridded climate data</span><span class="ach-tag">Extreme indices</span>
+      </div>`
+  },
 ];
 
 const overlay = document.getElementById('achOverlay');

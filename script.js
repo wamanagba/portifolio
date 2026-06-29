@@ -67,25 +67,6 @@ document.querySelectorAll('.section, .project-card, .skill-category, .about-grid
   observer.observe(el);
 });
 
-// Contact form
-document.getElementById('contactForm').addEventListener('submit', function (e) {
-  e.preventDefault();
-  const note = document.getElementById('formNote');
-  const btn = this.querySelector('button[type="submit"]');
-
-  btn.textContent = 'Sending...';
-  btn.disabled = true;
-
-  setTimeout(() => {
-    note.textContent = '✓ Message sent! I will reply within 24h.';
-    note.style.color = 'var(--green)';
-    this.reset();
-    btn.textContent = 'Send Message';
-    btn.disabled = false;
-    setTimeout(() => { note.textContent = ''; }, 5000);
-  }, 1200);
-});
-
 // Achievement modal
 // Order: 0=FCV Urban, 1=Central Sahel, 2=Climate-Conflict EW, 3=CRAFT, 4=Climate Monitoring, 5=Crop Yield
 const achData = [

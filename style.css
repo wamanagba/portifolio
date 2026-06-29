@@ -377,26 +377,27 @@ a:hover { color: var(--accent); }
 .plink-ghost { color: var(--text2); }
 
 /* ===== CONTACT ===== */
-.contact-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 60px; align-items: start; }
-.contact-intro { color: var(--text2); margin-bottom: 32px; font-size: 1rem; }
-.contact-items { display: flex; flex-direction: column; gap: 20px; }
-.contact-item { display: flex; align-items: center; gap: 14px; }
-.contact-icon { font-size: 1.3rem; }
-.contact-item a, .contact-item span { color: var(--text2); font-size: .95rem; }
-.contact-item a:hover { color: var(--accent2); }
-
-.contact-form { display: flex; flex-direction: column; gap: 20px; }
-.form-group { display: flex; flex-direction: column; gap: 6px; }
-.form-group label { font-size: .875rem; font-weight: 500; color: var(--text2); }
-.form-group input, .form-group textarea {
-  background: var(--surface); border: 1px solid var(--border);
-  border-radius: 8px; padding: 12px 16px;
-  color: var(--text); font-size: .95rem; font-family: inherit;
-  outline: none; transition: border-color .2s;
-  resize: vertical;
+.contact-centered { max-width: 760px; margin: 0 auto; text-align: center; }
+.contact-intro { color: var(--text2); margin-bottom: 40px; font-size: 1rem; line-height: 1.7; }
+.contact-cards {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;
 }
-.form-group input:focus, .form-group textarea:focus { border-color: var(--accent2); }
-.form-note { font-size: .875rem; color: var(--green); text-align: center; min-height: 1.4em; }
+.contact-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 22px 18px;
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  text-decoration: none; transition: border-color .2s, transform .2s, box-shadow .2s;
+  cursor: pointer;
+}
+.contact-card:hover {
+  border-color: var(--accent); transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(22,163,74,.12);
+}
+.contact-card-static { cursor: default; }
+.contact-card-static:hover { transform: none; box-shadow: none; border-color: var(--border); }
+.cc-icon { font-size: 1.6rem; }
+.cc-label { font-size: .72rem; text-transform: uppercase; letter-spacing: 1px; color: var(--accent2); font-weight: 600; }
+.cc-value { font-size: .875rem; color: var(--text2); }
 
 /* ===== FOOTER ===== */
 .footer { background: var(--bg); border-top: 1px solid var(--border); padding: 32px 24px; text-align: center; }

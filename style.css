@@ -112,7 +112,7 @@ a:hover { color: var(--accent); }
 .impact-li {
   display: flex; align-items: flex-start; gap: 12px;
   padding: 11px 0; border-bottom: 1px solid var(--border);
-  transition: background .15s;
+  transition: background .15s; list-style: none;
 }
 .impact-li:last-child { border-bottom: none; }
 .impact-dot {

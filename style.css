@@ -108,22 +108,28 @@ a:hover { color: var(--accent); }
   font-size: .75rem; text-transform: uppercase; letter-spacing: 2px;
   color: var(--text2); margin-bottom: 28px; font-weight: 600;
 }
-.impact-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 28px; }
-.impact-stat { display: flex; flex-direction: column; gap: 4px; }
-.impact-number { font-size: 2.4rem; font-weight: 700; color: var(--accent2); line-height: 1; }
-.impact-label {
-  font-size: .78rem; color: var(--text2); display: flex; flex-direction: column; gap: 2px;
+.impact-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0; }
+.impact-li {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 11px 0; border-bottom: 1px solid var(--border);
+  transition: background .15s;
 }
-.impact-note { font-size: .7rem; color: var(--accent); font-family: 'JetBrains Mono', monospace; }
-.impact-divider { height: 1px; background: var(--border); margin-bottom: 20px; }
-.impact-partners-label { font-size: .7rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text2); margin-bottom: 12px; }
-.impact-partners { display: flex; flex-wrap: wrap; gap: 8px; }
-.impact-partner {
-  background: var(--surface2); border: 1px solid var(--border);
-  padding: 4px 12px; border-radius: 16px;
-  font-size: .78rem; color: var(--text); font-weight: 500;
-  font-family: 'JetBrains Mono', monospace;
+.impact-li:last-child { border-bottom: none; }
+.impact-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--accent2); flex-shrink: 0; margin-top: 5px;
 }
+.impact-dot-dim { background: var(--text2); }
+.impact-proj {
+  display: block; font-size: .9rem; font-weight: 600; color: var(--text);
+  line-height: 1.3;
+}
+.impact-org {
+  display: block; font-size: .74rem; color: var(--accent);
+  font-family: 'JetBrains Mono', monospace; margin-top: 2px;
+}
+.impact-li-footer .impact-proj { color: var(--text2); font-weight: 500; font-size: .84rem; }
+.impact-li-footer .impact-org { color: var(--text2); }
 
 /* ===== BUTTONS ===== */
 .btn {
@@ -462,5 +468,4 @@ a:hover { color: var(--accent); }
   .contact-cards { grid-template-columns: 1fr 1fr; }
   .timeline { padding-left: 20px; }
   .timeline-dot { left: -27px; }
-  .impact-stats { grid-template-columns: 1fr 1fr; }
 }

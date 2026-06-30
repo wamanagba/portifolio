@@ -29,6 +29,7 @@ let phraseIndex = 0, charIndex = 0, deleting = false;
 const typedEl = document.getElementById('typedText');
 
 function type() {
+  if (!typedEl) return;
   const current = phrases[phraseIndex];
   if (!deleting) {
     typedEl.textContent = current.slice(0, ++charIndex);
